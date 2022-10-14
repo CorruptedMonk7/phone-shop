@@ -26,12 +26,12 @@ const loadDisplay = (phones, dataLimit) => {
     const phoneCard = document.createElement('div');
     phoneCard.classList.add('col')
     phoneCard.innerHTML = `
-                <div class="card m-4 p-3">
+                <div class="card m-2 p-3">
                     <img src="${phone.image}" class="card-img-top" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">${phone.phone_name}</h5>
                         
-                            <button onclick="deatails('${phone.slug}')" href="#" class="btn btn-warning text center" data-bs-toggle="modal" data-bs-target="#phoneDetailModal">Show Details</button>
+                            <button onclick="deatails('${phone.slug}')" href="#" class="btn btn-warning text center" data-bs-toggle="modal" data-bs-target="#phoneDetailModal">Details</button>
 
                     </div>
                 </div>
